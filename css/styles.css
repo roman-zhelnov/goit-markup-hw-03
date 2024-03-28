@@ -11,6 +11,7 @@ p,h1,h2,h3,h4,h5,h6 {
 
 a {
     text-decoration-line: none;
+    font-style: normal;
 }
 
 ul {
@@ -22,6 +23,10 @@ ul {
 
 button {
     cursor: pointer;
+}
+
+img {
+    display: block;
 }
 
 .visually-hidden {
@@ -52,7 +57,12 @@ button {
     padding-bottom: 24px;
 }
 
+.header-container {
+    display: flex;
+}
+
 .header-nav {
+    display: flex;
 }
 
 .header-logo {
@@ -63,13 +73,17 @@ button {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-right: 76px;
 }
 
 .header-logo-color{
     color:#2e2f42;
 }
 
-.header-menu-list {}
+.header-menu-list {
+    display: flex;
+    gap: 24px;
+}
 
 .header-menu-item {}
 
@@ -86,10 +100,12 @@ button {
 }
 
 .header-contacts {
-    font-style: normal;
+    margin: auto;
 }
 
-.header-contacts-list {}
+.header-contacts-list {
+    display: flex;
+}
 
 .header-contacts-item {}
 
@@ -168,7 +184,7 @@ button {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        max-width: 264px;
+        width: calc((100% - 3 * 24px) / 4)
 }
 
 
