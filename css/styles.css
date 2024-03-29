@@ -53,8 +53,6 @@ img {
 /*---------------------- HEADER ----------------------- */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -64,6 +62,7 @@ img {
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -82,8 +81,9 @@ img {
 }
 
 .header-menu-list {
+    padding: 24px 0;
     display: flex;
-    gap: 24px;
+    gap: 40px;
 }
 
 .header-menu-item {}
@@ -152,9 +152,12 @@ img {
         cursor: pointer;
         color: #fff;
         display: block;
+        border: none;
         margin: 0 auto;
         padding: 16px 32px;
         border-radius: 4px;
+        min-width: 169px;
+        height: 56px;
 }
 
 .hero-btn:hover, .hero-btn:focus{
@@ -220,7 +223,12 @@ img {
 }
 
 .team-item {
+    border-radius: 0 0 4px 4px;
     background-color: #FFFFFF;
+}
+
+.team-item-text-wrap {
+    padding: 32px 0;
 }
 
 .team-image {}
@@ -232,8 +240,8 @@ img {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        margin-top: 32px;
         margin-bottom: 8px;
+        align-items: center;
 }
 
 .team-item-text {
@@ -243,7 +251,7 @@ img {
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
-        padding-bottom: 32px;
+        text-align: center;
 }
 
 /*------------------------------- PORTFOLIO -----------------------*/
@@ -268,13 +276,14 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-item {
 }
 
 .portfolio-text-wrap{
-    padding-left: 16px;
+    padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
@@ -289,7 +298,6 @@ img {
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
-        padding-top: 32px;
 }
 
 .portfolio-item-text {
@@ -298,7 +306,6 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        padding-bottom: 32px;
 }
 
 /*----------------------------------- FOOTER ---------------------------------*/
@@ -318,6 +325,7 @@ img {
         text-transform: uppercase;
         color: #4d5ae5;
         margin-bottom: 16px;
+        display: inline-block;
 }
 
 .footer-logo-color{
