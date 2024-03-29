@@ -103,7 +103,7 @@ img {
 }
 
 .header-contacts {
-    margin: auto;
+    margin-right: 0;
 }
 
 .header-contacts-list {
@@ -227,6 +227,8 @@ img {
 .team-item {
     border-radius: 0 0 4px 4px;
     background-color: #FFFFFF;
+    width: calc((100% - 3 * 24px) / 4);
+
 }
 
 .team-item-text-wrap {
@@ -282,6 +284,7 @@ img {
 }
 
 .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-text-wrap{
@@ -341,5 +344,4 @@ img {
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
-        margin-top: 16px;
 }
